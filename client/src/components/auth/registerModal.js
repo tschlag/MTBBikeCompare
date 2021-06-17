@@ -138,3 +138,6 @@ const mapStateToProps = (state) => ({
     isAuthenticated: state.auth.isAuthenticated,
     error: state.error
 });
+
+export default connect(mapStateToProps, {register, clearErrors})(RegisterModal);
+
